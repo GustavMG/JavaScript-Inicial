@@ -32,3 +32,22 @@ console.log('El tipo de dato de la variable 12 "12" es: ' + typeof(var12)); //St
 console.log('El tipo de dato de la variable 13 "Twenty" es: ' + typeof(var13)); //String
 console.log("El tipo de dato de la variable 14 null es: " + typeof(var14)); //object
 console.log("El tipo de dato de la variable 15 undefined es: " + typeof(var15));    //Undefined
+
+//      EJERCICIO DE JUGUETERIA
+
+//Declaración cantidad de juguetes
+payasos = 27;
+muñecas = 14;
+
+//Declaración cantidad de peso en gr de juguetes
+pesoPayasos = 112;
+pesoMuñeca = 75;
+
+//Declaración de variable para el resultado
+pesoTotal = 0;
+
+//Operación
+pesoTotal = ((payasos*pesoPayasos) + (muñecas*pesoMuñeca))/1000;
+
+//Impresión de resultado
+console.log("El peso total del paquete es: " + pesoTotal + "kg");
