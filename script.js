@@ -1,4 +1,6 @@
-alert("Estoy vivo!");
+// alert("Estoy vivo!");
+
+
 
 /*
     Variables
@@ -101,7 +103,125 @@ console.log(operacionMatematica);
 console.log(typeof(esAdministrador));   //Boolean
 console.log(typeof(edadDeFelipe));  //Number
 
+/* Tipos de variables
 
-// Ejemplo de valores Symbol
+    En JS tenemos 3 tipos principales de variables:
 
-// Ejemplo de valores Object
+        - var: Era la forma principal de declarar variables. Es una variable muy flexible, tiene un scope(alcance) global, esto es que el valor de esta variable esta disponible en todo el programa.
+
+        - let: Lo usamos para limitare l alcance de nuestras variables (scope), y se limita  aun bloque de codigo o expresión (meter variables dentro de funciones). variables locales
+
+        - const: 
+
+*/
+
+// En este caso la mamá de bambi esta visible desde cualquier lugar del programa
+var mamaDeBambiViva = false;
+
+var cazador = "listo para disparar";
+
+let nombre = "Felipe Maqueda";
+
+const pi = 3.1416;
+
+/**
+    Funciones
+
+    Una funcion es una agrupación de instrucciones que se ejecutan cuando se llama o se invoca. Las funciones pueden recibir parametros y devolver valores. Es importante mencionar que las funciones nos e ejecuten si no que se invoquen.
+
+    *Parametros: Variables que necesitamos para alimentar mi función (todad las variables se tienen que utilizar)
+
+    Ejemplo: limon, azucar, vasito de agua, cucharita, hielos, agua.
+
+    *Nombre de la función: Con el nombre, nosotros vamos a poder activar o invocar la función (basicamente, tenemos que llamarla para que funcione)
+    Ejemplo: prepararAguitaDeLimon
+
+
+    -Operaciones: Conjunto de instrucciones (en orden especifico).
+    Ejemplo: 1) Cortar el limon, 2) Exprimir el limon, etc.
+
+
+    -Resultado: Las funciones generalmente deben tener un resultado.
+    Ejemplo: Vasito de aguita de limon
+ */
+
+    //1. Creamos la funcion con la palabra reservada function y le ponemos un nombre. Despues, abrimos y cerramos parentesis y abrimos y cerraremos llaves {}
+
+    //2. Ponemos nuestros parametros (variables) dentro del parentesis
+
+    //3. Poner las instrucciones dentro de las llaves, utilizando los parametros o argumentos
+
+    //4. Invocar la función escribiendo su nombre y abrimos y cerramos parentesis
+
+    var limon = "limon";
+    var agua = "agua";
+    var hielos = "hielos";
+    var azucar = "azucar";
+    var vaso = "vaso";
+    var cuchara = "cuchara";
+    
+    function prepararAguitaDeLimon(limon, agua, hielos, azucar, vaso, cuchara){
+
+        var limon = "limon";
+        var agua = "agua";
+        var hielos = "hielos";
+        var azucar = "azucar";
+        var vaso = "vaso";
+        var cuchara = "cuchara";
+
+        console.log("Cortar el limon " + limon);
+        console.log("Exprimir limon");
+        console.log("Agregar el jugo de limon al vaso " + vaso);
+        console.log("Agregamos los hielos la vaso " + hielos);
+        console.log("Agregamos el agua al vaso " + agua);
+        console.log("Endulzamos al gusto " + azucar);
+        console.log("Mezclar y disfrutar " + cuchara);
+        console.log("Que rica agua de limón");
+
+        var cuchara = "tenedor";
+
+        console.log(cuchara);
+    }
+
+    prepararAguitaDeLimon();
+
+    // Ejemplo de las 3 formas de agregar parametros a funciones
+
+    // Primera forma: Usando parametros dentro de los parentesis e inicializando dentro de la función
+
+    function suma(a, b){ //Valores estan en undefined
+        a = 5;  //cambio el undefined por 5
+        b = 7;  //cambio el undefined por 7
+
+        resultadoSuma = a + b;   //Hago mi suma utilizando los dos valores
+
+        console.log(resultadoSuma); //Imprimo resultado
+    }
+
+    suma();    //Invoco la función
+
+    // Segunda forma: Usando parametros dentro del parentesis ya inicializados
+
+    function resta(a = 8, b = 5){
+        
+        resultadoResta = a - b;
+
+        console.log(resultadoResta);
+    }
+
+    resta();
+
+    // Tercera forma: Inicializando valores dentro de la invocación
+
+    function multiplicacion(a, b){
+
+        resultadoMultiplica = a * b;
+
+        console.log(resultadoMultiplica);
+    }
+
+    multiplicacion(5,5);
+    multiplicacion(5,4);
+    multiplicacion(5,3);
+    multiplicacion(5,2);
+    multiplicacion(5, );    //Se imprime NaN pq nos hace falta un parametro
