@@ -225,3 +225,30 @@ const pi = 3.1416;
     multiplicacion(5,3);
     multiplicacion(5,2);
     multiplicacion(5, );    //Se imprime NaN pq nos hace falta un parametro
+
+    //  Funciones anonimas
+
+    let funcionAnonima = function(a, b){
+        operacion = a / b;
+        console.log(operacion);
+    }
+
+    console.log(funcionAnonima);
+    funcionAnonima(10, 5);
+
+    // Uso del return, estas funciones son solamen
+
+    // Funcion para dar un saludo personalizado
+    function saludos(nombreSaludo){
+        let nombreSaludoEnFuncion = nombreSaludo;
+        console.log("Iniciando...");
+        return "Hola " + nombreSaludoEnFuncion;
+    }
+
+    //saludos("GUSTAVO");
+
+    const nombreQueSaqueDeMiFuncion = saludos(prompt("Introduce tu nombre por favor"));
+
+
+    //console.log( saludos("GUSTAVO"));
+    console.log(nombreQueSaqueDeMiFuncion);
