@@ -4,6 +4,8 @@ let diaNacimiento = prompt("Ingresa tu dia de Nacimiento en formato de 2 digitos
 let mesNacimiento = prompt("Ingresa tu mes de Nacimiento en formato de 2 digitos");
 let signoZodiacal = prompt("Ingresa tu signo ZODIACAL en MAYUSCULAS");
 
+
+//Impresión del signo de acuerdo al ingreso del dia y mes de nacimiento
 switch (mesNacimiento) {
     case "01":
         if (31 >= diaNacimiento > 19) {
@@ -117,6 +119,8 @@ switch (mesNacimiento) {
 
 }
 
+
+//Impresion de frase de acuerdo al signo del zodiaco ingresado
 switch (signoZodiacal) {
     case "ARIES": console.log("Te representa Mu de Aries");
         break;
