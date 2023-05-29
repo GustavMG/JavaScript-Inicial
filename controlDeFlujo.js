@@ -96,7 +96,7 @@ else
     }
 
 */
-
+/*
 let hora = prompt("Ingresa la hora actual");
 if (hora < 12){
     console.log("Buenos dias");
@@ -104,4 +104,84 @@ if (hora < 12){
     console.log("Buenas tardes ya, que barbaro como pasa el tiempo");
 } else{
     console.log("Buenas noches, vamos a mimir");
+}*/
+
+/*
+    Switch
+
+    Esta condición nos permite hacer multiples operaciones y tomar decisiones en funcion de distintos estados de las variables.
+    Evalua una expresión comparando el valor de un dato o variable, y ejecutando la instrucción asociada a ese caso
+
+    - case: Evalua el caso o condición asociado que dispara un bloque de código
+    - break: Termina el proceso sin que tengamos que pasar por todas las iteraciones o casos
+
+    switch(expresion o condicion){
+        case valo1:
+            //Codigo que se ejecuta si la condicion es igual a valor1
+        break;
+
+        case valo2:
+            //Codigo que se ejecuta si la condicion es igual a valor2
+        break;
+
+        case valo3:
+            //Codigo que se ejecuta si la condicion es igual a valor3
+        break;
+
+        case valo4:
+            //Codigo que se ejecuta si la condicion es igual a valor4
+        break;
+
+        case valo5:
+            //Codigo que se ejecuta si la condicion es igual a valor5
+        break;
+
+        default:
+            //Ingresaste un piso incorrecto
+    }
+
+*/
+
+//EJEMPLO DE SWITCH
+
+let pisoDestino = prompt("Ingresa el piso al que quieras ir (1 al 5)");
+
+switch(pisoDestino){
+    case "1": 
+    console.log("Vamos a piso 1(Suena musica de elevador de fondo)");
+    break;
+
+    case "2": 
+    console.log("Vamos a piso 2(Suena musica de elevador de fondo)");
+    break;
+
+    case "3": 
+    console.log("Vamos a piso 3(Suena musica de elevador de fondo)");
+    break;
+
+    case "4": 
+    console.log("Vamos a piso 4(Suena musica de elevador de fondo)");
+    break;
+
+    case "5": 
+    console.log("Vamos a piso 5(Suena musica de elevador de fondo)");
+    break;
+
+    default: 
+    console.log("Ingresaste un piso incorrecto");
+
+}
+
+//  EJERCICIO DE EVEE
+
+var elementoEvolucion = prompt("Ingresa el elemento con el que ")
+
+switch(elementoEvolucion){
+    case "piedraFuego":
+        console.log("Tu Evee ha evolucionado a Flareon");
+        break;
+
+    case "piedraTrueno":
+        console.log("Tu Evee ha evolucionado a Jolteon");
+        break;
 }
