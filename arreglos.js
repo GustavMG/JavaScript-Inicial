@@ -116,5 +116,33 @@ console.log(listaDeComprasDeLaQuincena);
 
 console.log(listaDeComprasDeLaQuincena.indexOf("Coquitas"));
 
-//Metodo pra unir elementos de una rreglo en una cadena de texto
+//Metodo pra unir elementos de un arreglo en una cadena de texto
 console.log(listaDeComprasDeLaQuincena.join("\n"));
+
+// Modificación del arreglo (push, pop, shift, unshift, splice)
+
+// Acceso y busqueda de elementos (indexOf, lastIndexOf, includes)
+
+// Transformación de elementos (sort, reverse, map)
+
+/* Splice (agregar, eliminar o reemplazar elementos en posiciones especificas)
+    Sintaxis
+
+    array.splice(iniciamos, numeroElementosABorrar, ElementoAInsertar, ElementoAInsertar);
+*/
+
+// Splice para borrar elementos
+var abecedario = ["A", "B", "C", "D", "E"]; //Borrar Cy D
+
+abecedario.splice(2,2);
+console.log(abecedario);    //ABE
+
+// Splice para insertar elementos
+abecedario.splice(2, 0, "C", "D");
+console.log(abecedario);    //ABCDE
+
+// Splice para reemplazar elementos del arreglo
+var vocales = ["A", "E", "I", "O", "U"];
+
+vocales.splice(1, 2, "COMER", "COMER", "COMER");
+console.log(vocales);
