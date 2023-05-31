@@ -31,16 +31,16 @@ if (condicion){
 let edadFelipe = 17;
 let edadPermitida = 18;
 
-if(edadFelipe < edadPermitida){
+if (edadFelipe < edadPermitida) {
     console.log("Lo siento Felipe, no puedes ir a la fiesta");
 }
 
 let edadAxel = "m";
 let edadParaEntrarALaFiesta = 18;
 
-if(edadAxel < edadParaEntrarALaFiesta){
+if (edadAxel < edadParaEntrarALaFiesta) {
     console.log("Lo siento, no puedes entrar a a la fiesta");
-} else{
+} else {
     console.log("Felicidades, tienes la edad permitida para entrar a la fiesta");
 }
 
@@ -146,42 +146,45 @@ if (hora < 12){
 
 let pisoDestino = prompt("Ingresa el piso al que quieras ir (1 al 5)");
 
-switch(pisoDestino){
-    case "1": 
-    console.log("Vamos a piso 1(Suena musica de elevador de fondo)");
-    break;
+switch (pisoDestino) {
+    case "1":
+        console.log("Vamos a piso 1(Suena musica de elevador de fondo)");
+        break;
 
-    case "2": 
-    console.log("Vamos a piso 2(Suena musica de elevador de fondo)");
-    break;
+    case "2":
+        console.log("Vamos a piso 2(Suena musica de elevador de fondo)");
+        break;
 
-    case "3": 
-    console.log("Vamos a piso 3(Suena musica de elevador de fondo)");
-    break;
+    case "3":
+        console.log("Vamos a piso 3(Suena musica de elevador de fondo)");
+        break;
 
-    case "4": 
-    console.log("Vamos a piso 4(Suena musica de elevador de fondo)");
-    break;
+    case "4":
+        console.log("Vamos a piso 4(Suena musica de elevador de fondo)");
+        break;
 
-    case "5": 
-    console.log("Vamos a piso 5(Suena musica de elevador de fondo)");
-    break;
+    case "5":
+        console.log("Vamos a piso 5(Suena musica de elevador de fondo)");
+        break;
 
-    default: 
-    console.log("Ingresaste un piso incorrecto");
+    default:
+        console.log("Ingresaste un piso incorrecto");
 
 }
 
 //  EJERCICIO DE EVEE
 
-var elementoEvolucion = prompt("Ingresa el elemento con el que ")
+var elementoEvolucion = prompt("Ingresa la piedra evolutica que tienes (agua, trueno o fuego) ")
 
-switch(elementoEvolucion){
-    case "piedraFuego":
-        console.log("Tu Evee ha evolucionado a Flareon");
+switch (elementoEvolucion) {
+    case "agua":
+        console.log("Tu Evee ha evolucionado a Vaporeon");
         break;
 
-    case "piedraTrueno":
+    case "trueno":
         console.log("Tu Evee ha evolucionado a Jolteon");
+        break;
+    case "fuego":
+        console.log("Tu Evee ha evolucionado a Flareon");
         break;
 }
