@@ -9,22 +9,35 @@
     <link href="./desarrollo-movil.ico" rel="icon"/>
 </head>
 <body>
-
+    <!--
     <p id="parrafo1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consectetur adipisci accusantium voluptatibus laudantium cum eius incidunt molestias quidem. Quibusdam nesciunt explicabo omnis ab voluptatibus repudiandae ipsum placeat voluptates illum!</p>
 
     <p class="parrafos">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta neque unde consectetur perferendis, nam quo aliquid consequatur temporibus beatae minima minus dignissimos sequi tempora sint magnam eius, facere quaerat quas.</p>
 
     <p class="parrafos">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio deleniti id exercitationem veritatis ut obcaecati esse numquam ducimus ullam doloremque modi molestias aliquid reiciendis, fugit, eum aliquam mollitia delectus. Mollitia?</p>
 
-    <!--
-    <button>Cambiar texto a azul</button>
-    <button>Cambiar texto a verde</button>
-    <button>Cambiar texto a rojo</button>-->
+    <button onclick="cambiarColor('green')" id="botonCambiarColor">Cambia color</button>
+    -->
+    
+    <!-- ESTE ES EL FRONT PARA NUESTRO CONTADOR DE MEMES-->
+    <div>
+        <h1>Contador de memes</h1>
+
+        <h2 id="numeroContador"> 0 </h2>
+
+        <button id="botonIncrementar">Incrementar</button>
+        <button id="botonDecrementar">Decrementar</buttonk=>
+        <button id="botonResetear">Resetear</button>
+        <br/>
+
+        <img id="memeRandom" src="" alt="Meme Aleatorio" style="display: none;" >
+
+    </div>
 
 
     
 <!--Los documentos de Script(JS) van antes del cierre del body-->
-<script src="./DOM.js"></script> 
+<script src="./contadorDeMemes.js"></script> 
 <!-- <script src="./ejercicioTiposDeDatos.js"></script>-->
 </body>
 </html>

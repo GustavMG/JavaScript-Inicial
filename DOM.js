@@ -23,9 +23,15 @@ Comunicación entre HTML y JS
 Metodos de selección de elementos
 
 Son elementos que nos van a permitir seleccionar 1 o varios elementos o grupos de ellos del DOM. Estos metodos se utilizan en el documentos, por eso se agrega  un document.getElement
-getElementById
-getElementByClassName
-getElementByTagName
+
+Tradicionales
+    getElementById
+    getElementByClassName
+    getElementByTagName
+
+Modernos
+    querySelector();    ->Busca el primer elemento que coincide con el selector de CSS
+    querySelectorAll(); -> Busca todos los elementos que coinciden con el selector de CSS
 
 */
 
@@ -41,5 +47,39 @@ console.log(parrafo);   //info del objeto
 let parrafitos = document.getElementsByClassName("parrafos");
 console.log(parrafitos);    //Info de HTML Collection
 
+//Traer elementos por nombre de etiqueta
 var parrafosEtiqueta = document.getElementsByTagName("p");
 console.log(parrafosEtiqueta);
+
+//Metodos mas actuales
+var parrafoQuerySelector = document.querySelector("#parrafo1");
+var parraforQuerySelectorsAll = document.querySelectorAll(".parrafos");
+
+console.log(parrafoQuerySelector);
+console.log(parraforQuerySelectorsAll);
+
+
+//Evento HTML
+function cambiarColor(color){
+    parrafo.style.color = color;
+}
+
+//Evento con Eventlistener
+/*
+    Permite escuchar el evento indicado(primer parametro) y despues en el caso de que ocurra(escuche), se ejecuta la función asociada (segundo parametro).
+
+    Sintaxis
+
+    object.addEventListener(nombreDelEvento, funcionQueSeDispara);
+*/
+
+//referenciar boton
+
+const botonCambiarColor = document.querySelector("#botonCambiarColor");
+
+botonCambiarColor.addEventListener("click", 
+
+function(){
+    alert("Hola, has presionado el boton para cambiar color");
+}
+)
