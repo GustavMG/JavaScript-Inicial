@@ -62,3 +62,24 @@ juanchoDelCampo.imprimirInfo();
 juanchoDelCampo.ronronear();
 nenito.ronronear();
 panquesito.imprimirInfo();
+
+/*
+    JSON (JavaScript Object Notation)
+
+    Es un formato basado en texto(string) para representar datos estructurados(objetos) basados en la sintaxis de objetos JavaScvript ({, :})
+    JSON es una estructura de datos (mantiene la estructura de un objeto de JS normal), que nos permite guardar datos en forma de objetos. La unica diferencia este que estos datos se guardan en un formato de texto, para poder hacer la comunicacion con nuestro servidor.
+
+    Para poder comunicarnos con un servidor, necesitamos convertir nuestro objeto a un objeto que pueda ser interpretado.
+
+*/
+
+//Objeto normal en JavaScript
+objeto = {
+    nombre: "Felipe",
+    edad: 15,
+}
+console.log(objeto);
+
+//Como nuestro servidor no interpreta objetos "puros", necesitamos convertirlos a cadenas de texto. Este proceso se le conoce como serializar
+
+console.log(JSON.stringify(objeto));
