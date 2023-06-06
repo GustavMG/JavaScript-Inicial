@@ -34,7 +34,7 @@ Modernos
     querySelectorAll(); -> Busca todos los elementos que coinciden con el selector de CSS
 
 */
-
+/*
 //Traer elementos con getElementById
 let parrafo = document.getElementById("parrafo1");
 
@@ -62,7 +62,7 @@ console.log(parraforQuerySelectorsAll);
 //Evento HTML
 function cambiarColor(color){
     parrafo.style.color = color;
-}
+}*/
 
 //Evento con Eventlistener
 /*
@@ -72,7 +72,7 @@ function cambiarColor(color){
 
     object.addEventListener(nombreDelEvento, funcionQueSeDispara);
 */
-
+/*
 //referenciar boton
 
 const botonCambiarColor = document.querySelector("#botonCambiarColor");
@@ -83,3 +83,32 @@ function(){
     alert("Hola, has presionado el boton para cambiar color");
 }
 )
+*/
+/*
+    Elementos para crear y agregar nodos a nuestro DOM
+
+    Flujo normal para hacer esto es:
+    1 se crean
+    2 se agregan
+
+    Sintaxis para crear elementos:
+    elementosPadre.createElement("tipoDeElemento")
+*/
+
+
+//Primero se tiene que crear el elemento y luego agregarlo
+//Para crear elementos createElement()
+const div = document.createElement("div");
+
+//Para insertarlo appendChield
+document.body.appendChild(div);
+
+//Codigo para agregar una imagen a mi documento
+
+//1ro Creo la imagen
+var appendImg = document.createElement("img");
+appendImg.src = "https://cdns-images.dzcdn.net/images/artist/098ea0886f463cf48b75d2af855ad3b9/500x500.jpg";
+appendImg.alt = "Imagen sorpresa"
+
+//2do Insertar
+document.body.appendChild(appendImg);
