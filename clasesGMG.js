@@ -11,6 +11,10 @@ Una clase en JavaScript es una plantilla que define la estructura y el comportam
 //Se define una clase Persona con un constructor que inicializa las propiedades nombre y edad
 class Persona {
     constructor(nombre, edad) {
+        // Alunos prefieren está convención
+        // para que no choque con los getter
+        // o para definir una propiedad privada (no queda privada)
+        // this._nombre = nombre 
         this.nombre = nombre;
         this.edad = edad;
     }
