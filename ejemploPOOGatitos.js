@@ -80,6 +80,13 @@ objeto = {
 }
 console.log(objeto);
 
-//Como nuestro servidor no interpreta objetos "puros", necesitamos convertirlos a cadenas de texto. Este proceso se le conoce como serializar
+/*Como nuestro servidor no interpreta objetos "puros", necesitamos convertirlos a cadenas de texto. Este proceso se le conoce como serializar
+
+La sintaxis para pasar de objeto normal de JS a JSON es
+*/
 
 console.log(JSON.stringify(objeto));
+
+console.log("Esto es un objeto serializado,", objetoSerealizado);
+
+console.objeto(objetoSerealizado)
